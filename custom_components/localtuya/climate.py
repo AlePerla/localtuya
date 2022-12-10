@@ -429,6 +429,7 @@ class LocaltuyaClimate(LocalTuyaEntity, ClimateEntity):
 
     @staticmethod
     def convert_value(value, conversion):
+        """Try value conversion as requested."""
         try:
             if conversion == "int":
                 return int(value)
